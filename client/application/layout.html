@@ -1,13 +1,11 @@
 <head>
   <title>UDProducts</title>
 </head>
-
-<body>
+<template name="layout">
   <div class="span12">
-    {{> main }}
-    {{> index}}
+    {{yield}}
   </div>
-</body>
+</template>
 
 <template name="main">
   {{> contactForm}}
